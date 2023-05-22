@@ -1,0 +1,212 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.cont{
+    padding-bottom: 3rem;
+}
+
+h4{
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 0.8rem;
+    z-index: 4;
+}
+
+.cont-one{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cont-two{
+    position: relative;
+}
+
+#chatcircle{
+    background-color: white;
+    box-shadow: hsl(0, 0%, 90%) 0 0 0.3rem;
+    padding: 1rem 2rem;
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    display: none;
+}
+
+#chat-circle a{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+}
+
+#bi-x{
+    position: absolute;
+    top: 3%;
+    right: 5%;
+}
+
+.search{
+    margin: 5rem 0.5rem 0rem 0.5rem;
+}
+
+input[type=search]{
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    color: black;
+    border: 1px solid black;
+    outline: none;
+}
+
+.profile-scroll{
+    display: flex;
+    overflow: auto;
+    padding: 1rem;
+    margin: 1rem 0rem;
+}
+
+.story-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 1rem;
+}
+
+.story-indicator{
+    height: 4.3rem;
+    width: 4.3rem;
+    border: 2px solid purple;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile{
+    height: 3.8rem;
+    width: 3.8rem;
+}
+
+.profile img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.name{
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.messages-cont{
+    margin: 1rem 0.5rem;
+}
+
+.message{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.message .profile{
+    display: flex;
+    justify-content: center;
+    height: 4rem;
+    width: 4rem;
+}
+
+.message .profile img{
+    height: 4rem;
+    width: 4rem;
+}
+
+.message-text-div{
+  gap: 2rem;
+}
+
+.msg-div-one{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.read-indicator{
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 50%;
+    background-color: green;
+}
+
+.main-msg{
+   color: gray;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.navigation{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem 0.8rem;
+  z-index: 3;
+  border-top: 1px solid gray;
+  background-color: white;
+}
+
+@media screen and (min-width:765px) {
+
+    .header{
+        margin-left: 8rem;
+
+    }
+
+    .cont{
+        margin-left: 8rem;
+
+    }
+
+    .profile-scroll{
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: fit-content;
+        margin-top: 0;
+        margin-bottom: 0;
+        z-index: 10;
+        padding: 0;
+        box-shadow: hsl(0, 0%, 90%) 0 0 1.2rem;
+        gap: 2rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .navigation{
+        margin-left: 7.5rem;
+    }
+}

@@ -1,0 +1,193 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0.3rem;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 4;
+}
+
+h4{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+}
+
+.h-div-one{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.story-indicator{
+    height: 3.8rem;
+    width: 3.8rem;
+    border: 2px solid purple;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.profile{
+    height: 3.2rem;
+    width: 3.2rem;
+}
+
+.profile img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.name{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.online-status{
+    height: 0.7rem;
+    width: 0.7rem;
+    position: absolute;
+    background-color: rgb(44, 180, 44);
+    border-radius: 50%;
+    left: 85%;
+    top: 68%;
+}
+
+.msg-cont{
+    margin: 5.5rem 0.3rem;
+    padding-bottom: 3rem;
+    position: relative;
+}
+
+.msg{
+    box-shadow: hsl(0, 0%, 80%) 0 0 1.6rem;
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
+    border-radius: 0.7rem;
+    margin-bottom: 0.5rem;
+    float: left;
+    clear: both;
+    width: fit-content;
+}
+
+.msg-div{
+    border: 2px solid purple;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    padding: 0.5rem;
+}
+
+.main-msg{
+  margin-top: 0.5rem;
+}
+
+.time-sent{
+    font-family: monospace;
+    float: left;
+    clear: both;
+    margin-top: 0.7rem;
+    color:purple;
+    font-weight: 700;
+}
+
+.recipient{
+    box-shadow: hsl(0, 0%, 80%) 0 0 1.6rem;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    border-radius: 0.7rem;
+    float: right;
+    clear: both;
+    width: fit-content;
+    margin-bottom: 0.5rem;
+    display: inline;
+}
+
+.recipient:last-child{
+  margin-bottom: 5.5rem;
+}
+
+.recipient .time-sent{
+    float: right;
+    clear: both;
+}
+
+.msg-div-two{
+    text-align: right;
+    border: 2px solid purple;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    padding: 0.3rem;
+}
+
+.main-msg-two{
+    text-align: right;
+    margin-top: 0.5rem;
+    padding-left: 0;
+}
+
+.nav{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  margin: 0.5rem 0 0rem 0rem;
+  padding: 0.5rem;
+  border: 1px solid gray;
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
+}
+
+form{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.text{
+  width: 100%;
+}
+
+textarea{
+  padding: 0.7rem 0.9rem 0.2rem 1rem;
+  width: 100%;
+  border-radius: 5rem;
+  outline: none;
+  border: none;
+  background: #d5d5d577;
+  color: black;
+}
+
+button{
+  color: white;
+  padding: 1.2rem 2rem;
+  border: none;
+  background: none;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width:765px){
+    .msg-cont{
+        padding: 0 6rem;
+    }
+}

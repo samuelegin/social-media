@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem 0.3rem;
+    z-index: 3;
+}
+
+.cover-photo{
+    height: 13rem;
+    width: 100%;
+}
+
+.cover-photo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.back a{
+    color: rgba(128, 128, 128, 0.699);
+}
+
+.profile-content{
+    z-index: 3;
+}
+
+.content-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+    position: relative;
+}
+
+.friends{
+    text-align: center;
+}
+
+.friends h4{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.friends p{
+    font-family: monospace;
+}
+
+.profile-picture{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    background-color: white;
+    padding: 0.3rem;
+    position: absolute;
+    top: -1%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.profile-picture img{
+    height: 100%;
+    width:  100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile-picture h2{
+   font-family: Arial, Helvetica, sans-serif;
+   text-align: center;
+   font-size: 1rem;
+   margin-top: 0.5rem;
+}
+
+.followers{
+    text-align: center;
+}
+
+.followers h4{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.followers p{
+    font-family: monospace;
+}
+
+.bio{
+    margin-top: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8rem;
+    padding: 0 0.7rem;
+    text-align: center;
+}
+
+.f-cont{
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    padding: 0.5rem 1rem;
+    border: none;
+    background: none;
+}
+
+.follow{
+    background-color: white;
+    border: 1px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.message button{
+    background-color: black;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.mid-nav{
+    margin-top: 1.5rem;
+    text-align: center;
+    padding: 0.8rem 0;
+}
+
+.mid-nav a{
+    padding: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+.mid-nav a:hover{
+    border: 1px solid black;
+    padding: 0.7rem;
+}
+
+.img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 0.8rem;
+    column-gap: 0.8rem;
+    row-gap: 1rem;
+    padding: 0.3rem;
+}
+
+.recent{
+    height: 12rem;
+}
+
+.recent img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.7rem;
+}

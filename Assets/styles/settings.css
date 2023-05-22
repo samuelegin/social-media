@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.gen-cont{
+    margin: 0.5rem;
+}
+
+.settings-display{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.show-profile{
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.image-cont{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+}
+
+.image-cont img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.theme{
+    padding: 0.5rem 0.3rem;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid gray;
+    margin-top: 1.5rem;
+    border-left: none;
+    border-right: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+}
+
+.t-icons{
+    display: flex;
+    gap: 1.5rem;
+    border: 1px solid gray;
+    padding: 0.5rem;
+}
+
+.main-settings{
+    margin: 0.5rem 0.3rem;
+}
+
+.privacy{
+    padding: 1.5rem 0.5rem;
+    box-shadow: hsl(0, 0%, 90%) 0 0 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.privacy a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    margin-bottom: 0.5rem;
+}
+
+.account{
+    padding: 1.5rem 0.5rem;
+    box-shadow: hsl(0, 0%, 90%) 0 0 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.account a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    margin-bottom: 0.5rem;
+}
+
+.payment{
+    padding: 1.5rem 0.5rem;
+    box-shadow: hsl(0, 0%, 90%) 0 0 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.payment a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    margin-bottom: 0.5rem;
+}
+
+.help{
+    padding: 1.5rem 0.5rem;
+    box-shadow: hsl(0, 0%, 90%) 0 0 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.help a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 1.3rem;
+}
+
+.request-verification{
+    padding: 1.5rem 0.5rem;
+    box-shadow: hsl(0, 0%, 90%) 0 0 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.request-verification a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 1.3rem;
+}
+
+.log-out{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    padding: 1.5rem 0.5rem;
+    box-shadow: hsl(0, 0%, 90%) 0 0 1rem;
+    margin-bottom: 2rem;
+}
+
+@media screen and (min-width:768px) {
+    .main-settings{
+        padding: 0 6rem;
+    }
+
+    .theme{
+        margin: 0 6rem;
+    }
+
+    .show-profile{
+        padding: 0.5rem 6rem;
+    }
+}
