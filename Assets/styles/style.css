@@ -69,8 +69,8 @@ main{
 }
 
 .story-indicator{
-    height: 4.3rem;
-    width: 4.3rem;
+    height: 3.5rem;
+    width: 3.5rem;
     border: 2px solid purple;
     border-radius: 50%;
     display: flex;
@@ -79,8 +79,8 @@ main{
 }
 
 .profile{
-    height: 3.8rem;
-    width: 3.8rem;
+    height: 3rem;
+    width: 3rem;
 }
 
 .profile img{
@@ -92,7 +92,7 @@ main{
 
 .name{
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
 }
 
 .main-feed{
@@ -161,7 +161,7 @@ main{
 }
 
 .others-div a{
-    color: purple;
+    color: black;
 }
 
 .bi-x{
@@ -221,14 +221,11 @@ main{
   justify-content: space-between;
   box-shadow: hsl(0,0%,97%) 0 0 0.1rem;
   background-color: white;
-  padding: 0.5rem 0.2rem;
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: 3;
-  margin-top: 1rem;
-  border-top: 1px solid gray;
 }
 
 .footer-nav a{
@@ -236,42 +233,31 @@ main{
  padding: 1rem;
 }
 
-.footer-nav .story-indicator{
-    height: 3.5rem;
-    width: 3.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.fprofile{
+  display: flex;
+  justify-content: center;
 }
 
-.footer-nav .profile{
-  height: 2.8rem;
-  width: 2.8rem;
+.fprofile img{
+  border-radius: 50%;
+  height: 2.5rem;
+  width: 2.5rem;
+  object-fit: cover;
 }
-  
 
 .home{
- border-radius: 50%;
-  height: 3.8rem;
-  width: 3.8rem;
   display: flex;
   justify-content: center;
   text-align: center;
 }
 
 .chat{
-  border-radius: 50%;
-  height: 3.8rem;
-  width: 3.8rem;
   display: flex;
   justify-content: center;
   text-align: center;
 }
 
 .settings {
-  border-radius: 50%;
-  height: 3.8rem;
-  width: 3.8rem;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -297,8 +283,6 @@ main{
 }
 
 @media screen and (min-width:768px){
-
-
     nav{
         margin-left: 4rem;
     }
