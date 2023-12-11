@@ -34,8 +34,8 @@ p{
 }
 
 .story-indicator{
-    height: 3.8rem;
-    width: 3.8rem;
+    height: 3.3rem;
+    width: 3.3rem;
     border: 2px solid purple;
     border-radius: 50%;
     display: flex;
@@ -45,8 +45,8 @@ p{
 }
 
 .profile{
-    height: 3.2rem;
-    width: 3.2rem;
+    height: 2.8rem;
+    width: 2.8rem;
 }
 
 .profile img{
@@ -76,7 +76,7 @@ p{
     position: relative;
 }
 
-.msg{
+.sender{
     box-shadow: hsl(0, 0%, 80%) 0 0 1.6rem;
     padding: 0.5rem 1rem 0.5rem 0.5rem;
     border-radius: 0.7rem;
@@ -94,8 +94,14 @@ p{
     padding: 0.5rem;
 }
 
-.main-msg{
+.sender-msg{
   margin-top: 0.5rem;
+  font-size: 0.7rem;
+  color: gray;
+}
+
+.sender-msg p{
+  font-size: 0.9rem;
 }
 
 .time-sent{
@@ -104,7 +110,7 @@ p{
     clear: both;
     margin-top: 0.7rem;
     color:purple;
-    font-weight: 700;
+    font-size: 0.7rem;
 }
 
 .recipient{
@@ -136,10 +142,16 @@ p{
     padding: 0.3rem;
 }
 
-.main-msg-two{
+.recipient-msg{
     text-align: right;
     margin-top: 0.5rem;
     padding-left: 0;
+    color: gray;
+    font-size: 0.8rem;
+}
+
+.recipient-msg p{
+    font-size: 0.9rem;
 }
 
 .nav{
@@ -150,10 +162,7 @@ p{
   background-color: white;
   margin: 0.5rem 0 0rem 0rem;
   padding: 0.5rem;
-  border: 1px solid gray;
-  border-bottom: none;
-  border-right: none;
-  border-left: none;
+  border: none;
 }
 
 form{
@@ -174,7 +183,7 @@ textarea{
   outline: none;
   border: none;
   background: #d5d5d577;
-  color: black;
+  color: gray;
 }
 
 button{
