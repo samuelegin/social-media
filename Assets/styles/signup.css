@@ -1,118 +1,116 @@
-*{
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    box-sizing: border-box;
-    text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  text-align: center;
 }
 
-.cont{
-    margin: 0 1rem;
+.cont {
+  margin: 0 1rem;
 }
 
-h1{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-top: 3rem;
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 3rem;
 }
 
-p{
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 0.5em;
-    color: gray;
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 0.5em;
+  color: gray;
 }
 
-form{
-    margin-top: 2rem;
+form {
+  margin-top: 2rem;
 }
 
-input[type=text]{
-    border: none;
-    color: black;
-    outline: purple;
-    padding: 1rem 0.5rem;
-    text-align: left;
+input[type="text"] {
+  border: none;
+  color: black;
+  outline: purple;
+  padding: 1rem 0.5rem;
+  text-align: left;
 }
 
-.fullname{
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
-    box-shadow: hsl(0, 0%, 80%) 0 0 0.3rem;
-    gap: 0.4rem;
-    border-radius: 0.5rem;
+.fullname {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  box-shadow: hsl(0, 0%, 80%) 0 0 0.3rem;
+  gap: 0.4rem;
+  border-radius: 0.5rem;
 }
 
-.username{
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
-    box-shadow: hsl(0, 0%, 80%) 0 0 0.3rem;
-    gap: 0.4rem;
-    border-radius: 0.5rem;
+.username {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  box-shadow: hsl(0, 0%, 80%) 0 0 0.3rem;
+  gap: 0.4rem;
+  border-radius: 0.5rem;
 }
 
-input[type=email]{
-    border: none;
-    color: black;
-    outline: purple;
-    padding: 1rem 0.5rem;
-    text-align: left;
+input[type="email"] {
+  border: none;
+  color: black;
+  outline: purple;
+  padding: 1rem 0.5rem;
+  text-align: left;
 }
 
-.email{
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
-    box-shadow: hsl(0, 0%, 80%) 0 0 0.3rem;
-    gap: 0.4rem;
-    border-radius: 0.5rem;
+.email {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  box-shadow: hsl(0, 0%, 80%) 0 0 0.3rem;
+  gap: 0.4rem;
+  border-radius: 0.5rem;
 }
 
-
-input[type=password]{
-    border: none;
-    color: black;
-    outline: purple;
-    padding: 1rem 0.5rem;
-    text-align: left;
+input[type="password"] {
+  border: none;
+  color: black;
+  outline: purple;
+  padding: 1rem 0.5rem;
+  text-align: left;
 }
 
-.password{
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
-    box-shadow: hsl(0, 0%, 80%) 0 0 0.3rem;
-    gap: 0.4rem;
-    border-radius: 0.5rem;
+.password {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  box-shadow: hsl(0, 0%, 80%) 0 0 0.3rem;
+  gap: 0.4rem;
+  border-radius: 0.5rem;
 }
 
-
-.btn-div{
-    display: flex;
-    justify-content: center;
+.btn-div {
+  display: flex;
+  justify-content: center;
 }
 
-button{
-    padding: 0.6rem 2rem;
-    background: purple;
-    border: none;
-    border-radius: 0.9rem;
-    color: white;
-    margin-top: 1rem;
+button {
+  padding: 0.6rem 2rem;
+  background: purple;
+  border: none;
+  border-radius: 0.9rem;
+  color: white;
+  margin-top: 1rem;
 }
 
-footer{
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 8rem;
-    color: gray;
+footer {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 8rem;
+  color: gray;
 }
 
-a{
-    color: purple;
+a {
+  color: purple;
 }
 
-@media screen and (max-width:){
-    form{
-        margin: 0 20rem;
-    }
+@media screen and (max-width: ) {
+  form {
+    margin: 0 20rem;
+  }
 }
