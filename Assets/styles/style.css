@@ -221,13 +221,13 @@ main {
   display: flex;
   align-items: center;
   gap: 1em;
-  /*justify-content: space-between;*/
+  justify-content: space-between;
   padding: 0.5em;
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  border-radius: 0;
+  bottom: 1.3rem;
+  left: 1rem;
+  right: 1rem;
+  border-radius: 0.7rem;
 }
 
 .footer-nav {
