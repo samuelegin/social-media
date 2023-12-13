@@ -1,160 +1,160 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem 0.3rem;
-    background-color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 4;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0.3rem;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 4;
 }
 
-h4{
-    font-family: Arial, Helvetica, sans-serif;
+h4 {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.9rem;
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
 }
 
-.h-div-one{
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+.h-div-one {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-.story-indicator{
-    height: 3.3rem;
-    width: 3.3rem;
-    border: 2px solid purple;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+.story-indicator {
+  height: 3.3rem;
+  width: 3.3rem;
+  border: 2px solid purple;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
-.profile{
-    height: 2.8rem;
-    width: 2.8rem;
+.profile {
+  height: 2.8rem;
+  width: 2.8rem;
 }
 
-.profile img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 50%;
+.profile img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
-.name{
-    font-family: Arial, Helvetica, sans-serif;
+.name {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.online-status{
-    height: 0.7rem;
-    width: 0.7rem;
-    position: absolute;
-    background-color: rgb(44, 180, 44);
-    border-radius: 50%;
-    left: 85%;
-    top: 68%;
+.online-status {
+  height: 0.7rem;
+  width: 0.7rem;
+  position: absolute;
+  background-color: rgb(44, 180, 44);
+  border-radius: 50%;
+  left: 85%;
+  top: 68%;
 }
 
-.msg-cont{
-    margin: 5.5rem 0.3rem;
-    padding-bottom: 3rem;
-    position: relative;
+.msg-cont {
+  margin: 5.5rem 0.3rem;
+  padding-bottom: 3rem;
+  position: relative;
 }
 
-.sender{
-    box-shadow: hsl(0, 0%, 80%) 0 0 1.6rem;
-    padding: 0.5rem 1rem 0.5rem 0.5rem;
-    border-radius: 0.7rem;
-    margin-bottom: 0.5rem;
-    float: left;
-    clear: both;
-    width: fit-content;
+.sender {
+  box-shadow: hsl(0, 0%, 80%) 0 0 1.6rem;
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
+  border-radius: 0.7rem;
+  margin-bottom: 0.5rem;
+  float: left;
+  clear: both;
+  width: fit-content;
 }
 
-.msg-div{
-    border: 2px solid purple;
-    border-right: none;
-    border-top: none;
-    border-bottom: none;
-    padding: 0.5rem;
+.msg-div {
+  border: 2px solid purple;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+  padding: 0.5rem;
 }
 
-.sender-msg{
+.sender-msg {
   margin-top: 0.5rem;
   font-size: 0.7rem;
   color: gray;
 }
 
-.sender-msg p{
+.sender-msg p {
   font-size: 0.9rem;
 }
 
-.time-sent{
-    font-family: monospace;
-    float: left;
-    clear: both;
-    margin-top: 0.7rem;
-    color:purple;
-    font-size: 0.7rem;
+.time-sent {
+  font-family: monospace;
+  float: left;
+  clear: both;
+  margin-top: 0.7rem;
+  color: purple;
+  font-size: 0.7rem;
 }
 
-.recipient{
-    box-shadow: hsl(0, 0%, 80%) 0 0 1.6rem;
-    padding: 0.5rem 0.5rem 0.5rem 1rem;
-    border-radius: 0.7rem;
-    float: right;
-    clear: both;
-    width: fit-content;
-    margin-bottom: 0.5rem;
-    display: inline;
+.recipient {
+  box-shadow: hsl(0, 0%, 80%) 0 0 1.6rem;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  border-radius: 0.7rem;
+  float: right;
+  clear: both;
+  width: fit-content;
+  margin-bottom: 0.5rem;
+  display: inline;
 }
 
-.recipient:last-child{
+.recipient:last-child {
   margin-bottom: 5.5rem;
 }
 
-.recipient .time-sent{
-    float: right;
-    clear: both;
+.recipient .time-sent {
+  float: right;
+  clear: both;
 }
 
-.msg-div-two{
-    text-align: right;
-    border: 2px solid purple;
-    border-left: none;
-    border-top: none;
-    border-bottom: none;
-    padding: 0.3rem;
+.msg-div-two {
+  text-align: right;
+  border: 2px solid purple;
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
+  padding: 0.3rem;
 }
 
-.recipient-msg{
-    text-align: right;
-    margin-top: 0.5rem;
-    padding-left: 0;
-    color: gray;
-    font-size: 0.8rem;
+.recipient-msg {
+  text-align: right;
+  margin-top: 0.5rem;
+  padding-left: 0;
+  color: gray;
+  font-size: 0.8rem;
 }
 
-.recipient-msg p{
-    font-size: 0.9rem;
+.recipient-msg p {
+  font-size: 0.9rem;
 }
 
-.nav{
+.nav {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -165,18 +165,18 @@ p{
   border: none;
 }
 
-form{
+form {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
 }
 
-.text{
+.text {
   width: 100%;
 }
 
-textarea{
+textarea {
   padding: 0.7rem 0.9rem 0.2rem 1rem;
   width: 100%;
   border-radius: 5rem;
@@ -186,7 +186,7 @@ textarea{
   color: gray;
 }
 
-button{
+button {
   color: white;
   padding: 1.2rem 2rem;
   border: none;
@@ -195,8 +195,8 @@ button{
   align-items: center;
 }
 
-@media screen and (min-width:765px){
-    .msg-cont{
-        padding: 0 6rem;
-    }
+@media screen and (min-width: 765px) {
+  .msg-cont {
+    padding: 0 6rem;
+  }
 }
