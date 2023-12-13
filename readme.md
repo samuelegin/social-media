@@ -1,6 +1,4 @@
-# Project Name
-
-Description of your project goes here.
+# Social media
 
 ## Table of Contents
 
