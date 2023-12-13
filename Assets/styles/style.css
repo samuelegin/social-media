@@ -64,7 +64,7 @@ nav h2 {
 }
 
 main {
-  margin: 4rem 0.5rem;
+  margin: 4em 0 2em;
   height: fit-content;
 }
 
@@ -72,7 +72,7 @@ main {
   display: flex;
   overflow: auto;
   padding: 1rem;
-  margin: 1rem 0rem;
+  /*margin: 1rem 0rem;*/
 }
 
 .story-cont {
@@ -81,7 +81,6 @@ main {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  font-family: Arial, Helvetica, sans-serif;
   margin-right: 1rem;
 }
 
@@ -109,21 +108,26 @@ main {
 .name {
   text-align: center;
   font-size: 0.7rem;
+  width: 60px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .main-feed {
-  margin-top: 1rem;
+  margin: 1em 1.5em;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
+  column-gap: 1em;
+  row-gap: 1em;
 }
 
 .post-cont {
-  box-shadow: hsl(0, 0%, 90%) 0 0 1.3rem;
-  padding: 1rem;
-  border-radius: 0.7rem;
+  box-shadow: hsl(0, 0%, 90%) 0 0 3px;
+  padding: 1em;
+  /*border-radius: 10px;*/
   height: fit-content;
   position: relative;
-  margin-bottom: 2.5rem;
 }
 
 .post-header {
@@ -189,7 +193,6 @@ main {
   display: block;
   padding: 1rem;
   text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .header-profile {
@@ -198,43 +201,40 @@ main {
   gap: 0.5rem;
 }
 
-.header-profile h2 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1rem;
-}
-
-.header-profile p {
-  font-family: monospace;
-}
-
 .caption {
   margin-top: 0.8rem;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .post-img img {
   width: 100%;
   margin-top: 1rem;
-  object-fit: cover;
 }
-
+.post-author {
+  font-size: 1rem;
+  font-weight: 900;
+}
+.post-timestamp {
+  font-size: 0.75rem;
+}
 .complements {
   background-color: rgba(0, 0, 0, 0.274);
   display: flex;
-  justify-content: space-between;
-  padding: 0.8rem;
+  align-items: center;
+  gap: 1em;
+  /*justify-content: space-between;*/
+  padding: 0.5em;
   position: absolute;
-  bottom: 4%;
-  left: 5%;
-  right: 5%;
-  border-radius: 0.8rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 0;
 }
 
 .footer-nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  box-shadow: hsl(0, 0%, 97%) 0 0 0.1rem;
+  box-shadow: hsl(0, 0%, 90%) 0 0 4px;
   background-color: white;
   position: fixed;
   bottom: 0;
@@ -269,9 +269,8 @@ main {
 }
 .open-file i {
   color: purple;
-  font-size: 3rem;
+  font-size: 30px;
 }
-
 @media screen and (min-width: 768px) {
   nav {
     margin-left: 4rem;
