@@ -258,7 +258,6 @@ main {
   object-fit: cover;
 }
 .open-file {
-  background-color: purple;
   border-radius: 50%;
   padding: var(--icon-padding);
   text-align: center;
@@ -267,8 +266,8 @@ main {
   right: 5%;
 }
 .open-file i {
-  color: white;
-  font-size: 25px;
+  color: purple;
+  font-size: 3rem;
 }
 
 @media screen and (min-width: 768px) {
