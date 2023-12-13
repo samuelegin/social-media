@@ -30,6 +30,9 @@ i.bi {
 i.bi-plus {
   font-size: 30px;
 }
+i.bi-bell{
+  color: black;
+}
 .bi-camera {
   background-color: var(--light-shade);
   padding: var(--icon-padding);
@@ -91,7 +94,6 @@ main {
   align-items: center;
   justify-content: center;
 }
-
 .profile {
   height: 3rem;
   width: 3rem;
