@@ -3,6 +3,7 @@
 Description of your project goes here.
 
 ## Table of Contents
+
 - [Introduction](#introduction)
 - [Features](#features)
 - [Installation](#installation)
@@ -17,7 +18,7 @@ This is a social media website, it enables instant messaging, image and posts sh
 - Instant messaging
 - Voice calls
 - image and posts sharing
-- 
+-
 
 ## Installation
 
@@ -28,6 +29,7 @@ This is a social media website, it enables instant messaging, image and posts sh
 ## Contributing
 
 Feel free to contribute! Follow these steps:
+
 1. Fork the project.
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`).
 3. Commit your changes (`git commit -m 'Add some amazing feature'`).
