@@ -33,6 +33,9 @@ i.bi {
 i.bi-plus {
   font-size: 30px;
 }
+i.bi-bell{
+  color: black;
+}
 .bi-camera {
   background-color: var(--light-shade);
   padding: var(--icon-padding);
@@ -95,7 +98,6 @@ main {
   align-items: center;
   justify-content: center;
 }
-
 .profile {
   height: 3rem;
   width: 3rem;
@@ -225,13 +227,13 @@ main {
   display: flex;
   align-items: center;
   gap: 1em;
-  /*justify-content: space-between;*/
+  justify-content: space-between;
   padding: 0.5em;
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  border-radius: 0;
+  bottom: 1.3rem;
+  left: 1rem;
+  right: 1rem;
+  border-radius: 0.7rem;
 }
 
 .footer-nav {

@@ -1,0 +1,89 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header{
+  padding: 1rem 0.8rem;
+  box-shadow: hsl(0, 0%, 90%) 0 0 1.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.return{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+i.bi-caret-left{
+  margin-top: 0.3rem;
+}
+
+button{
+  background: none;
+  border:1px solid purple;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+main{
+  text-align: center;
+  margin: 1rem;
+}
+
+textarea{
+  padding: 1rem 0rem 0rem 0.5rem;
+  width: 100%;
+  outline-color: purple;
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: hsl(0, 0%, 90%) 0 0 1.3rem;
+}
+
+i.bi-send-fill{
+  color: white;
+}
+
+.upload-images{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.make-post-cont{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.make-post{
+  height: 3.3rem;
+  width: 3.3rem;
+  border-radius: 50%;
+  background-color: purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tag-friends{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
