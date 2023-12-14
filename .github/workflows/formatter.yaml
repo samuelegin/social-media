@@ -1,0 +1,26 @@
+name: Formatter
+run-name: Check for file formatting
+on:
+  push:
+    branches:
+      - main
+  pull-request:
+    branches:
+      - "**"
+
+jobs:
+  check_file_formatting:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20.2.0
+          cache: npm
+      - name: Install dependencies
+        run: npm i -g prettier
+      - name: Check if file is formated
+        run: |
+          prettier --check .
+    - run: echo Done
+
