@@ -6,10 +6,10 @@ on:
       - main
   pull-request:
     branches:
-      - "**"
+      - "*"
 
 jobs:
-  check_file_formatting:
+  check-file-formatting:
     runs-on: ubuntu-latest
     steps:
       - name: Setup node
