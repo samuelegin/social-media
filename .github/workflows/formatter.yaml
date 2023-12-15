@@ -4,14 +4,14 @@ on:
   push:
     branches:
       - main
-  pull-request:
-    branches:
-      - "*"
+
 
 jobs:
-  check-file-formatting:
+  formatter:
+    name: Code Formatter check
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: Setup node
         uses: actions/setup-node@v3
         with:
@@ -22,5 +22,5 @@ jobs:
       - name: Check if file is formated
         run: |
           prettier --check .
-    - run: echo Done
+      - run: echo Done
 
