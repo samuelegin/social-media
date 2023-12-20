@@ -1,100 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
 }
+body {
+  font-family: "Kanit", sans-serif;
+  margin-top: 5em;
+}
+.bi {
+  font-size: 20px;
+}
 
 .header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  background-color: white;
-  padding: 0.8rem;
+  box-shadow: hsl(0, 0%, 90%) 0 0 4px;
+  padding: 1em 1.5em;
   z-index: 4;
-  gap: 1rem;
-  display: flex;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  justify-content: space-between;
 }
-
-.main-notification {
-  margin: 0.5rem 0.8rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 0.3rem;
-}
-
-.body {
-  margin-top: 5rem;
-}
-
-.unread-notification-indicator {
-  border: 2px solid purple;
-  border-right: none;
-  border-top: none;
-  border-bottom: none;
-  padding: 0.5rem;
-  font-family: Arial, Helvetica, sans-serif;
-  box-shadow: hsl(0, 0%, 90%) 0 0 1.6rem;
-  width: 100%;
-}
-
-.notification-time {
-  display: flex;
-  justify-content: center;
-  font-size: 0.8rem;
+.header h2 {
+  font-size: 1rem;
 }
 
 .notification {
-  padding: 1.3rem 0.3rem;
-  width: fit-content;
-  width: 100%;
+  box-shadow: hsl(0, 0%, 90%) 0 0 5px;
+  margin: 0.5em 1.5em;
+  padding: 0.5em;
+  position: relative;
 }
-
-span {
-  font-weight: 600;
-  color: black;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-p {
-  font-family: Arial, Helvetica, sans-serif;
+.notification-time {
   font-size: 0.8rem;
-  color: black;
+  position: absolute;
+  top: 0;
+  right: 3px;
+  color: #aeb7c7;
+  font-weight: 700;
+  z-index: 2;
 }
-
-h4 {
-  color: black;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+.notification-body {
+  color: #131313;
 }
-
-.mark-as-read {
-  display: flex;
-  align-items: center;
+.notification-actor {
+  font-size: 0.9rem;
+  font-weight: 900;
 }
-
-.header-one {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 0.3rem;
+.notification-action {
+  font-size: 0.8rem;
 }
 
 @media screen and (min-width: 765px) {
-  .body {
-    padding: 0 6rem;
+  .header {
+    padding: 1em 12%;
   }
-
-  .name {
-    font-size: 1.3rem;
-  }
-
-  .notification p {
-    font-size: 1rem;
+  main {
+    margin: 2em 12%;
   }
 }
