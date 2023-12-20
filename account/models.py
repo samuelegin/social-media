@@ -3,7 +3,7 @@ from django.contrib.auth.models import AbstractUser
 import uuid
 
 
-class CustomUser(AbstractUser):
+class User(AbstractUser):
     id = models.UUIDField(
             primary_key=True,
             editable=False,
