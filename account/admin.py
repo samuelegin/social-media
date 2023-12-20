@@ -1,9 +1,9 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
-from .models import CustomUser
+from .models import User
 from django.utils.translation import gettext_lazy as _
 
-@admin.register(CustomUser)
+@admin.register(User)
 class CustomUserAdmin(UserAdmin):
     empty_value_display = "--empty--"
     list_display = ("username","email","contact","location")
@@ -16,7 +16,7 @@ class CustomUserAdmin(UserAdmin):
 
     fieldsets = (
         (None, {"fields": ("username", "password")}),
-		(_("Personal Info"), {"fields": ("username","first_name", "last_name", "email", "contact","profile_pic","bio","location","friends")}),
+		(_("Personal Info"), {"fields": ("first_name", "last_name", "email", "contact","profile_pic","bio","location","friends")}),
 		(
 			_("Permissions"),
 			{
