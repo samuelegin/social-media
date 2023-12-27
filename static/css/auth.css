@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Kanit", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.auth-container {
+  box-shadow: hsl(0, 0%, 90%) 0 0 4px;
+  padding: 2em 2em;
+  width: 500px;
+}
+.auth-container .header {
+  margin-bottom: 2em;
+}
+.auth-container .header legend {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.auth-container .header p {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.form-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  margin-top: 1em;
+  position: relative;
+}
+.form-input label {
+  font-size: 1rem;
+}
+.form-input label span {
+  color: red;
+}
+.form-input input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #f2f2f2;
+  outline: none;
+  font-family: "Kanit", sans-serif;
+  transition: .3s;
+}
+.form-input input:hover {
+  border: 1px solid purple;
+}
+.auth-btn {
+  display: inline-block;
+  margin-top: 2em;
+  border: none;
+  background: purple;
+  color: white;
+  padding: 12px;
+  width: 100%;
+  border-radius: 4px;
+}
+.auth-footer {
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: 1em;
+}
+.show-password {
+  position: absolute;
+  top: 45%;
+  right: 10px;
+}
+@media (max-width: 768px) {
+  .auth-container {
+    width: 100%;
+    margin: 0 1.5em;
+    padding: 2em 1em;
+  }
+}
