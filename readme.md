@@ -16,7 +16,6 @@ This is a social media website, it enables instant messaging, image and posts sh
 - Instant messaging
 - Voice calls
 - image and posts sharing
--
 
 ## Installation
 

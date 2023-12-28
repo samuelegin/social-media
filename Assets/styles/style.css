@@ -66,6 +66,8 @@ i.bi-bell {
   display: none;
 }
 
+
+
 main {
   margin: 4em 0 2em;
   height: fit-content;
@@ -253,6 +255,7 @@ main {
   color: black;
   padding: 1rem;
 }
+
 .fprofile {
   display: none;
 }
@@ -290,6 +293,9 @@ main {
     box-shadow: hsl(0, 0%, 90%) 0 0 4px;
     background: white;
     z-index: 99;
+  }
+  .desktop-nav a{
+    color: black;
   }
   .icon-nav-links {
     display: flex;

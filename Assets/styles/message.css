@@ -80,10 +80,11 @@ p {
   box-shadow: hsl(0, 0%, 80%) 0 0 1.6rem;
   padding: 0.5rem 1rem 0.5rem 0.5rem;
   border-radius: 0.7rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.9rem;
   float: left;
   clear: both;
   width: fit-content;
+  width: 15rem;
 }
 
 .msg-div {
@@ -98,15 +99,18 @@ p {
   margin-top: 0.5rem;
   font-size: 0.7rem;
   color: gray;
+  width: 15rem;
+  padding-right: 0.7rem;
 }
 
 .sender-msg p {
   font-size: 0.9rem;
+  word-wrap: break-word;
 }
 
 .time-sent {
   font-family: monospace;
-  float: left;
+  /* float: left; */
   clear: both;
   margin-top: 0.7rem;
   color: purple;
@@ -120,8 +124,9 @@ p {
   float: right;
   clear: both;
   width: fit-content;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.9rem;
   display: inline;
+  width: 15rem;
 }
 
 .recipient:last-child {
@@ -139,11 +144,11 @@ p {
   border-left: none;
   border-top: none;
   border-bottom: none;
-  padding: 0.3rem;
+  padding: 0.4rem;
 }
 
 .recipient-msg {
-  text-align: right;
+  text-align: left;
   margin-top: 0.5rem;
   padding-left: 0;
   color: gray;
@@ -152,6 +157,8 @@ p {
 
 .recipient-msg p {
   font-size: 0.9rem;
+  word-wrap: break-word;
+  line-height: 1.3rem;
 }
 
 .nav {
@@ -198,5 +205,13 @@ button {
 @media screen and (min-width: 765px) {
   .msg-cont {
     padding: 0 6rem;
+  }
+
+  .header{
+    padding: 0.5rem 6rem;
+  }
+
+  .nav{
+    padding: 0.5rem 5rem;
   }
 }

@@ -1,8 +1,7 @@
 const openOthers = document.getElementsByClassName("bi-three-dots-vertical");
 const closeOthers = document.getElementsByClassName("bi-x");
 const others = document.getElementsByClassName("others-div");
-const posts = document.querySelectorAll(".post-img");
-const likes = document.querySelectorAll(".bi-heart-fill");
+const likes = document.querySelectorAll(".bi .bi-heart-fill");
 
 for (let i = 0; i < openOthers.length; i++) {
   openOthers[i].addEventListener("click", function () {
@@ -16,8 +15,8 @@ for (let i = 0; i < closeOthers.length; i++) {
   });
 }
 
-for (let i = 0; i < posts.length; i++) {
-  posts[i].addEventListener("dblclick", function () {
+for (let i = 0; i < likes.length; i++) {
+  likes[i].addEventListener("click", ()=> {
     likes[i].style.color = "red";
   });
 }

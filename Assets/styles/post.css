@@ -17,10 +17,12 @@ header {
   justify-content: center;
   align-items: center;
   position: relative;
+  gap: 1.5rem;
 }
 
 i.bi-caret-left {
   margin-top: 0.3rem;
+  font-size: 1rem;
 }
 
 button {

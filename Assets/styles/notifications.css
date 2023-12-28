@@ -24,6 +24,7 @@ body {
   box-shadow: hsl(0, 0%, 90%) 0 0 4px;
   padding: 1em 1.5em;
   z-index: 4;
+  background-color: white;
 }
 .header h2 {
   font-size: 1rem;
