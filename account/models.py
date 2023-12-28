@@ -11,7 +11,7 @@ class User(AbstractUser):
     username = models.CharField(max_length=50,unique=True)
     email = models.EmailField()
     profile_pic = models.ImageField(upload_to="user_pic")
-    friends = models.ManyToManyField("self",symmetrical=False)
+    follows = models.ManyToManyField("self",symmetrical=False,blank=True,related_name="followed_by")
     bio = models.TextField()
     contact = models.IntegerField(null=True,blank=True)
     location = models.CharField(max_length=100)
