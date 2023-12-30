@@ -149,7 +149,7 @@
             <div class="header-profile">
               <div class="story-indicator">
                 <!-- link to profile -->
-                <a href="#">
+                <a href="{% url 'post:user_profile' post.post_owner.id %}">
                   <div class="profile">
                     <img src="{{ post.post_owner.profile_pic }}" alt="" />
                   </div>
@@ -223,7 +223,7 @@
         <i class="bi bi-chat"></i>
       </a>
 
-      <a href="./Assets/Pages/settings.html">
+      <a href="{% url 'post:follow' %}">
         <i class="bi bi-gear"></i>
       </a>
     </div>

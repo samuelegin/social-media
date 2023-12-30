@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/follow.css' %}">
+    <title>Follow</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+  />
+</head>
+<body>
+    <nav>
+        <h3>Follow</h3>
+    </nav>
+
+    <div class="search">
+        <form method="post">
+          {% csrf_token %}
+            <input type="search" name="search" placeholder="search">
+        </form>
+    </div>
+    <main>
+      {% for follow in follows %}
+        <div class="user-card">
+            <div class="user-profile">
+                <a href="{% url 'post:user_profile' follow.id %}">
+                    <img src="{{ follow.profile_pic }}" alt="">
+                </a>
+            </div>
+            <div class="follow-btn-cont">
+                <h3 class="username">{{ follow.username }}<!--<i class="bi bi-patch-check-fill"></i>--></h3>
+                <div class="followers"><span>{{follow.followed_by.count }}</span> Followers</div> 
+                <form action="{% url 'post:addfollow' follow.id %}" method="post">
+                  {% csrf_token %}
+                {% if follow not in request.user.follows.all %}
+                 <button class="follow" name="follow" value="follow">Follow</button>
+                {% elif follow in request.user.follows.all  %}
+                <p>you are following</p>
+                 <button class="follow" name="follow" value="unfollow">UnFollow</button>
+                {% endif %}
+                </form>
+            </div>
+        </div>
+      {% endfor %}
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+</body>
+</html>
