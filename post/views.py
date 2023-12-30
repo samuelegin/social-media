@@ -29,6 +29,7 @@ def post(request:HttpRequest):
     return render(request,"post/post.html")
 
 
+@login_required
 def follow(request:HttpRequest):
     if request.method == "POST":
         search = request.POST.get("search")
@@ -40,11 +41,13 @@ def follow(request:HttpRequest):
     return render(request,"post/follow.html",context)
 
 
+@login_required
 def profile(request:HttpRequest,user_id):
     user = User.objects.get(id=user_id)
     return render(request,"post/profile.html",{"user":user})
 
 
+@login_required
 def addfollow(request:HttpRequest,user_id):
     following = User.objects.get(id=user_id)
     current_user = request.user
@@ -69,3 +72,10 @@ def addfollow(request:HttpRequest,user_id):
     current_user.save()
 
     return redirect("post:follow")
+
+
+@login_required
+def notification(request:HttpRequest):
+    notifications = Notification.objects.all()
+    context = {"notifications":notifications}
+    return render(request,"post/notification.html",context)

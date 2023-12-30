@@ -17,10 +17,10 @@
       <i class="bi bi-camera"></i>
       <h2>Feed</h2>
       <div class="notifications">
-        <a href="./Assets/Pages/notifications.html">
+        <a href="{% url 'post:notification' %}">
           <i class="bi bi-bell"></i>
         </a>
-        <span class="notification-number">3</span>
+        <span class="notification-number">{{ notification.count }}</span>
       </div>
     </nav>
 
@@ -144,6 +144,7 @@
 
       <div class="main-feed">
         {% for post in posts %}
+        {% if post.post_owner in request.user.follows.all %}
         <div class="post-cont">
           <div class="post-header">
             <div class="header-profile">
@@ -210,6 +211,7 @@
             </a>
           </div>
         </div>
+        {% endif %}
         {% endfor %}
       </div>
     </main>
