@@ -153,7 +153,7 @@
   left: 0;
   right: 0;
   top: 0;
-  bottom: 0;
+  bottom: 0; 
   height: 40vh;
   width: 70vw; 
 }
@@ -179,7 +179,12 @@ h3{
 .blur-background {
   backdrop-filter: blur(50px);
 }
-
+.logout-cont{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
 
 @media screen and (min-width: 768px) {
   .main-settings {
