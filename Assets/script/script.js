@@ -1,22 +1,36 @@
-const openOthers = document.getElementsByClassName("bi-three-dots-vertical");
-const closeOthers = document.getElementsByClassName("bi-x");
-const others = document.getElementsByClassName("others-div");
-const likes = document.querySelectorAll(".bi .bi-heart-fill");
+document.addEventListener("DOMContentLoaded", function () {
+  const openOthers = document.querySelectorAll(".bi-three-dots-vertical");
+  const closeOthers = document.querySelectorAll(".bi-x");
+  const others = document.querySelectorAll(".others-div");
+  const likeButton = document.querySelectorAll(".bi-heart-fill");
+  let isLiked = false;
 
-for (let i = 0; i < openOthers.length; i++) {
-  openOthers[i].addEventListener("click", function () {
-    others[i].style.display = "unset";
+  openOthers.forEach((btn, index) => {
+    btn.addEventListener("click", function () {
+      others[index].style.display = "block";
+    });
   });
-}
 
-for (let i = 0; i < closeOthers.length; i++) {
-  closeOthers[i].addEventListener("click", function () {
-    others[i].style.display = "none";
+  closeOthers.forEach((btn, index) => {
+    btn.addEventListener("click", function () {
+      others[index].style.display = "none";
+    });
   });
-}
 
-for (let i = 0; i < likes.length; i++) {
-  likes[i].addEventListener("click", ()=> {
-    likes[i].style.color = "red";
+  likeButton.addEventListener('click', function () {
+    if (isLiked) {
+      likeButton.classList.remove('liked');
+    } else {
+      likeButton.classList.add('liked');
+    }
+
+    isLiked = !isLiked;
   });
-}
+
+  const socket = io();
+  
+  socket.on('connect', () => {
+    console.log('Connected to WebSocket');
+  });
+
+});
