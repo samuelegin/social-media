@@ -89,11 +89,9 @@ def like(request:HttpRequest) -> JsonResponse:
 
         post = Post.objects.get(id=int(p_id))
 
-        if post.like == 0:
-            post.like += 1
-        elif post.like == 1:
-            post.like -= 1
+        if request.user not in post.like.all():
+            post.like.add(request.user)
+        else:
+            post.like.remove(request.user)
 
-        post.save()
-
-        return JsonResponse({"like":post.like})
+        return JsonResponse({"like":post.like.count()})

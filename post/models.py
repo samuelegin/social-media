@@ -23,7 +23,7 @@ class Post(models.Model):
     post_owner = models.ForeignKey(User,on_delete=models.CASCADE,related_name="posts")
     post_image = models.ImageField(upload_to="post_image",blank=True,null=True)
     caption = models.CharField(max_length=3000,blank=True,null=True)
-    like = models.IntegerField(default=0,blank=True,null=True)
+    like = models.ManyToManyField(User)
     date_posted = models.DateTimeField(auto_now_add=True)
 
     class Meta:
