@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: kanit;
 }
 
 .gen-cont {
@@ -50,9 +52,6 @@
   border-right: none;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   align-items: center;
-}
-
-.t-name {
 }
 
 .t-icons {
@@ -141,6 +140,50 @@
   padding: 1.5rem 0.5rem;
   box-shadow: hsl(0, 0%, 90%) 0 0 1rem;
   margin-bottom: 2rem;
+}
+
+.logout-prompt{
+  box-shadow: hsl(0, 0%, 90%) 0 0 1rem;
+  padding: 1rem 0.5rem;
+  z-index: 3;
+  background-color: white;
+  display: none;
+  position: fixed;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0; 
+  height: 40vh;
+  width: 70vw; 
+}
+button{
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.7rem 0rem;
+  border-radius: 0.5rem;
+  border: none;
+  color: white;
+}
+.no{
+  background-color: purple;
+}
+.yes{
+  border: 1px solid black;
+  background: none;
+  color: black;
+}
+h3{
+  text-align: center;
+}
+.blur-background {
+  backdrop-filter: blur(50px);
+}
+.logout-cont{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
 }
 
 @media screen and (min-width: 768px) {
