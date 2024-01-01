@@ -1,8 +1,9 @@
 from django.shortcuts import render,redirect
 from .models import Post,Notification
-from django.http import HttpRequest
+from django.http import HttpRequest,JsonResponse
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import get_user_model
+from django.views.decorators.csrf import csrf_exempt
 
 
 User= get_user_model()
@@ -79,3 +80,20 @@ def notification(request:HttpRequest):
     notifications = Notification.objects.all()
     context = {"notifications":notifications}
     return render(request,"post/notification.html",context)
+
+@csrf_exempt
+def like(request:HttpRequest) -> JsonResponse:
+    if request.method == "POST":
+        p_id = request.POST.get("id")
+        print(p_id)
+
+        post = Post.objects.get(id=int(p_id))
+
+        if post.like == 0:
+            post.like += 1
+        elif post.like == 1:
+            post.like -= 1
+
+        post.save()
+
+        return JsonResponse({"like":post.like})

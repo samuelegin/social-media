@@ -204,8 +204,10 @@
           </div>
 
           <div class="complements">
-            <i class="bi bi-heart"></i>
-
+            <button class="like" style="border:none; outline:none; background:none;" data-id="{{ post.id }}">
+              <i class="bi bi-heart"></i>
+            </button>
+            <p class="likeNum">{{ post.like }}</p>
             <a href="">
               <i class="bi bi-chat"></i>
             </a>
@@ -236,7 +238,9 @@
     <a href="{% url 'post:post' %}" class="open-file">
       <i class="bi bi-plus-circle-fill"></i>
     </a>
-
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="{% static 'js/script.js' %}"></script>
   </body>
 </html>
