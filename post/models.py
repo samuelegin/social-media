@@ -45,13 +45,6 @@ class Comment(models.Model):
     def __str__(self):
         return self.post.caption
 
-    def save(self,*args,**kwargs):
-        Notification.objects.create(
-                user = self.commentter,
-                content = f"{self.commentter.username} commentted on your post",
-                receiver = self.post.post_owner)
-        super(Comment,self).save(*args,**kwargs)
-
 
 
 class Reply(models.Model):
@@ -66,11 +59,3 @@ class Reply(models.Model):
 
     def __str__(self):
         return self.comment.comment
-
-    def save(self,*args,**kwargs):
-        Notification.objects.create(
-                user = self.replier,
-                content = f"{self.replier.username} replied to your comment",
-                receiver = self.comment.commentter)
-        super(Reply,self).save(*args,**kwargs)
-
