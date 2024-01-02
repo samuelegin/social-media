@@ -8,7 +8,6 @@ def commentsignal(sender,instance,created,**kwargs):
         sender = instance.commentter
         content = f"{instance.commentter.username} commentted     on your post"
         receiver = instance.post.post_owner
-
         Notification.objects.create(
                 user=sender,
                 content=content,
@@ -21,7 +20,6 @@ def replysignal(sender,instance,created,**kwargs):
         sender=instance.replier
         content = f"{self.replier.username} replied to your comment"
         receiver=instance.comment.commentter
-
         Notification.objects.create(
                 user=sender,
                 content=content,

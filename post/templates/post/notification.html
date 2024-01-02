@@ -22,7 +22,6 @@
 
     <main>
       {% for notification in notifications %}
-      {% if notification.receiver == request.user %}
       <a href="">
         <div class="notification">
           <h4 class="notification-time">{{ notification.date }}</h4>
@@ -32,7 +31,6 @@
           </div>
         </div>
       </a>
-      {% endif %}
       {% endfor %}
     </main>
   </body>

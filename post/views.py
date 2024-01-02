@@ -1,4 +1,4 @@
-from django.shortcuts import render,redirect
+from django.shortcuts import render,redirect,get_object_or_404
 from .models import Post,Notification
 from django.http import HttpRequest,JsonResponse
 from django.contrib.auth.decorators import login_required
@@ -30,6 +30,7 @@ def post(request:HttpRequest):
     return render(request,"post/post.html")
 
 
+#this view brings all avialable user that can be followed
 @login_required
 def follow(request:HttpRequest):
     if request.method == "POST":
@@ -44,13 +45,14 @@ def follow(request:HttpRequest):
 
 @login_required
 def profile(request:HttpRequest,user_id):
-    user = User.objects.get(id=user_id)
+    user = get_object_or_404(User, id=user_id)
     return render(request,"post/profile.html",{"user":user})
 
 
+#follows a user once the follow button is clicked 
 @login_required
 def addfollow(request:HttpRequest,user_id):
-    following = User.objects.get(id=user_id)
+    following = get_object_or_404(User, id=user_id)
     current_user = request.user
 
     status = request.POST.get("follow")
@@ -77,7 +79,7 @@ def addfollow(request:HttpRequest,user_id):
 
 @login_required
 def notification(request:HttpRequest):
-    notifications = Notification.objects.all()
+    notifications = Notification.objects.filter(receiver=request.user)
     context = {"notifications":notifications}
     return render(request,"post/notification.html",context)
 
@@ -87,7 +89,7 @@ def like(request:HttpRequest) -> JsonResponse:
         p_id = request.POST.get("id")
         print(p_id)
 
-        post = Post.objects.get(id=int(p_id))
+        post = get_object_or_404(Post,id=int(p_id))
 
         if request.user not in post.like.all():
             post.like.add(request.user)

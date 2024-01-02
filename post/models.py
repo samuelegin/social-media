@@ -37,7 +37,7 @@ class Post(models.Model):
 class Comment(models.Model):
     commentter = models.ForeignKey(User,on_delete=models.CASCADE)
     post = models.ForeignKey(Post,on_delete=models.CASCADE,related_name="comments")
-    comment = models.CharField(max_length=500)
+    comment = models.TextField()
     date_commented = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -59,4 +59,4 @@ class Reply(models.Model):
         verbose_name_plural = "Replies"
 
     def __str__(self):
-        return self.comment.comment
+        return self.reply
