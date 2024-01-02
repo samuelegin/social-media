@@ -23,6 +23,7 @@
         <form method="post">
           {% csrf_token %}
             <input type="search" name="search" placeholder="search">
+            <button>search</button>
         </form>
     </div>
     <main>
@@ -35,21 +36,18 @@
             </div>
             <div class="follow-btn-cont">
                 <h3 class="username">{{ follow.username }}<!--<i class="bi bi-patch-check-fill"></i>--></h3>
-                <div class="followers"><span>{{follow.followed_by.count }}</span> Followers</div> 
-                <form action="{% url 'post:addfollow' follow.id %}" method="post">
-                  {% csrf_token %}
+                <div class="followers"><span id="followers">{{follow.followed_by.count }}</span> Followers</div> 
                 {% if follow not in request.user.follows.all %}
-                 <button class="follow" name="follow" value="follow">Follow</button>
+                 <button class="follow" value="follow" data-id="{{ follow.id }}" id="follow">Follow</button>
                 {% elif follow in request.user.follows.all  %}
-                <p>you are following</p>
-                 <button class="follow" name="follow" value="unfollow">UnFollow</button>
+                 <button class="follow" value="unfollow" data-id="{{ follow.id }}" id="unfollow">UnFollow</button>
                 {% endif %}
-                </form>
             </div>
         </div>
       {% endfor %}
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
     </script>
+    <script src="{% static 'js/follow.js' %}"></script>
 </body>
 </html>

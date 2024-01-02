@@ -50,31 +50,36 @@ def profile(request:HttpRequest,user_id):
 
 
 #follows a user once the follow button is clicked 
-@login_required
-def addfollow(request:HttpRequest,user_id):
-    following = get_object_or_404(User, id=user_id)
-    current_user = request.user
+@csrf_exempt
+def addfollow(request:HttpRequest):
+    if request.method == "POST":
+        u_id = request.POST.get("id")
+        status = request.POST.get("status")
 
-    status = request.POST.get("follow")
-    if status == "follow":
-        current_user.follows.add(following)
+        following = get_object_or_404(User, id=u_id)
+        current_user = request.user
 
-        Notification.objects.create(
+        if status == "follow":
+            current_user.follows.add(following)
+
+            Notification.objects.create(
                 user=current_user,
                 receiver=following,
                 content=f"{current_user} just followed you")
 
-    elif status == "unfollow":
-        current_user.follows.remove(following)
+            current_user.save()
+            return JsonResponse({"follow_num":following.followed_by.count()})
 
-        Notification.objects.create(
+        elif status == "unfollow":
+            current_user.follows.remove(following)
+
+            Notification.objects.create(
                 user=current_user,
                 receiver=following,
                 content=f"{current_user} just Unfollowed you")
 
-    current_user.save()
-
-    return redirect("post:follow")
+            current_user.save()
+            return JsonResponse({"follow_num":    following.followed_by.count()})
 
 
 @login_required
