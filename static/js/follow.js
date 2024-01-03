@@ -1,6 +1,6 @@
-let followButton = document.querySelectorAll("#follow");
-let unFollowButton = document.querySelectorAll("#unfollow");
-let followers = document.querySelectorAll("#followers");
+let followButton = document.querySelectorAll(".followbtn");
+let unFollowButton = document.querySelectorAll(".unfollowbtn");
+let followers = document.querySelectorAll(".followerspan");
 
 for (let i = 0; i < followButton.length; i++) {
     followButton[i].addEventListener("click", () => {
@@ -23,7 +23,6 @@ for (let i = 0; i < followButton.length; i++) {
 for (let j = 0; j < unFollowButton.length; j++)
     unFollowButton[j].addEventListener("click", () => {
         const id = unFollowButton[j].getAttribute("data-id");
-        console.log(id);
         $.ajax({
             url: "addfollow/",
             method: "POST",

@@ -36,11 +36,11 @@
             </div>
             <div class="follow-btn-cont">
                 <h3 class="username">{{ follow.username }}<!--<i class="bi bi-patch-check-fill"></i>--></h3>
-                <div class="followers"><span id="followers">{{follow.followed_by.count }}</span> Followers</div> 
+                <div class="followers"><span class="followerspan">{{follow.followed_by.count }}</span> Followers</div> 
                 {% if follow not in request.user.follows.all %}
-                 <button class="follow" value="follow" data-id="{{ follow.id }}" id="follow">Follow</button>
+                 <button class="follow followbtn" value="follow" data-id="{{ follow.id }}" id="follow">Follow</button>
                 {% elif follow in request.user.follows.all  %}
-                 <button class="follow" value="unfollow" data-id="{{ follow.id }}" id="unfollow">UnFollow</button>
+                 <button class="follow unfollowbtn" value="unfollow" data-id="{{ follow.id }}">UnFollow</button>
                 {% endif %}
             </div>
         </div>
