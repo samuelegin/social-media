@@ -45,7 +45,6 @@ textarea{
     padding: 20px 10px 20px 10px;
     border-radius: 20px;
     align-items: center;
-    box-shadow: hsl(0, 0%, 90%) 0 0 3px;
 }
 .comment {
     display: flex;

@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const openOthers = document.querySelectorAll(".bi-three-dots-vertical");
   const closeOthers = document.querySelectorAll(".bi-x");
   const others = document.querySelectorAll(".others-div");
-  const likeButton = document.querySelectorAll(".bi-heart-fill");
+  const likeButtons = document.querySelectorAll(".bi-heart-fill");
   let isLiked = false;
 
   openOthers.forEach((btn, index) => {
@@ -17,20 +17,14 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  likeButton.addEventListener('click', function () {
-    if (isLiked) {
-      likeButton.classList.remove('liked');
-    } else {
-      likeButton.classList.add('liked');
-    }
-
-    isLiked = !isLiked;
+for (let i = 0; i < likeButtons.length; i++) {
+  likeButtons[i].addEventListener('click', function () {
+    likeButtons[i].classList.toggle('liked');
   });
+}
 
-  const socket = io();
+
+
   
-  socket.on('connect', () => {
-    console.log('Connected to WebSocket');
-  });
-
 });
+

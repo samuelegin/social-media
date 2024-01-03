@@ -95,7 +95,6 @@ main {
   overflow: auto;
   padding: 1em;
   gap: 1em;
-  /*margin: 1rem 0rem;*/
 }
 
 .story-cont {
@@ -104,7 +103,6 @@ main {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  /*margin-right: 1em;*/
 }
 
 .story-indicator {
@@ -252,6 +250,14 @@ main {
   border-radius: 0.7rem;
 }
 
+.complements i.bi-heart-fill{
+  color: grey;
+}
+
+.complements i.bi-chat{
+  color: grey;
+}
+
 .footer-nav {
   display: flex;
   justify-content: space-around;
@@ -291,8 +297,9 @@ main {
   color: #6c14a0;
   font-size: 30px;
 }
-.bi-heart-fill.liked {
+.liked {
   color: red;
+  transition: 0.5s ease-in;
 }
 
 @media screen and (min-width: 768px) {
