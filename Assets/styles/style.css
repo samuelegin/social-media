@@ -3,8 +3,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: #fff;
-  background: rgb(48, 46, 46);
 }
 :root {
   --icon-padding: 8px 10px;
@@ -12,6 +10,7 @@
 }
 body {
   font-family: "Kanit", sans-serif;
+  background-color: white;
 }
 .mobile-nav {
   display: flex;
@@ -24,6 +23,7 @@ body {
   right: 0;
   background-color: white;
   z-index: 4;
+  box-shadow: hsl(0, 0%, 90%) 0 0 3px;
 }
 .logo {
   padding-top: 5px;
@@ -43,8 +43,8 @@ i.bi {
 i.bi-plus {
   font-size: 30px;
 }
-.bi-chat {
-  background-color: none;
+i.bi-bell {
+  color: black;
 }
 .bi-camera {
   background-color: var(--light-shade);
@@ -59,6 +59,11 @@ i.bi-plus {
 }
 .mobile-nav h2 {
   font-size: 1.2rem;
+}
+
+.mobile-nav .profile{
+  height: 2.5rem;
+  width: 2.5rem;
 }
 
 .notifications {
@@ -142,15 +147,13 @@ main {
 }
 
 .post-cont {
-  box-shadow: hsl(0, 0%, 35%) 0 0 3px;
+  box-shadow: hsl(0, 0%, 90%) 0 0 3px;
   padding: 1em;
-  /*border-radius: 10px;*/
   height: fit-content;
   position: relative;
 }
 .post-header {
   display: flex;
-  color: #fff;
   justify-content: space-between;
   padding-top: 0.5rem;
   align-items: center;
@@ -306,7 +309,7 @@ main {
     right: 0;
     padding: 0 12%;
     box-shadow: hsl(0, 0%, 90%) 0 0 4px;
-    background: rgb(48, 46, 46);
+    background-color: white;
     z-index: 99;
   }
   .desktop-nav a {
