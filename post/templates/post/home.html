@@ -1,21 +1,24 @@
 {% load static %}
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="{% static 'css/home.css' %}" />
     <title>Document</title>
   </head>
   <body>
     <nav class="mobile-nav">
-      <i class="bi bi-camera"></i>
+        <a href="{% url 'post:user_profile' request.user.id %}">
+          <div class="profile">
+            <img src="{{ request.user.profile_pic }}" alt="" />
+          </div>
+        </a>
+
       <h2>Feed</h2>
+
       <div class="notifications">
         <a href="{% url 'post:notification' %}">
           <i class="bi bi-bell"></i>
@@ -26,18 +29,22 @@
 
     <!-- Desktop nav -->
     <nav class="desktop-nav">
+      <div class="logo">
+        <img src="./Assets/Images/20240102_013013.png" alt="" />
+      </div>
       <h2>Feed</h2>
+
       <div class="icon-nav-links">
-        <a href="">
+        <a href="./index.html">
           <i class="bi bi-house"></i>
         </a>
-        <a href="">
+        <a href="./Assets/Pages/chats.html">
           <i class="bi bi-chat"></i>
         </a>
-        <a href="">
+        <a href="./Assets/Pages/notifications.html">
           <i class="bi bi-bell"></i>
         </a>
-        <a href="">
+        <a href="./Assets/Pages/settings.html">
           <i class="bi bi-gear"></i>
         </a>
       </div>
@@ -149,7 +156,6 @@
           <div class="post-header">
             <div class="header-profile">
               <div class="story-indicator">
-                <!-- link to profile -->
                 <a href="{% url 'post:user_profile' post.post_owner.id %}">
                   <div class="profile">
                     <img src="{{ post.post_owner.profile_pic }}" alt="" />
@@ -197,9 +203,9 @@
             </div>
           </div>
 
-          <p class="caption" style="margin-bottom:2em;">{{ post.caption }}</p>
+          <p class="caption">{{ post.caption }}</p>
 
-          <div class="post-img">
+          <div class="post-img" style="margin-bottom:2em;">
             <img src="" alt="" />
           </div>
 
@@ -227,19 +233,19 @@
         <i class="bi bi-chat"></i>
       </a>
 
-      <a href="{% url 'post:follow' %}">
+      <a href="./Assets/Pages/settings.html">
         <i class="bi bi-gear"></i>
       </a>
+
+      <a href="{% url 'post:follow' %}">
+        <i class="bi bi-person-add"></i>
+      </a>
     </div>
-    <a href="./Assets/Pages/profile.html" class="fprofile">
-      <img src="./Assets/Images/Rectangle 3 (1).png" alt="" />
-    </a>
 
     <a href="{% url 'post:post' %}" class="open-file">
       <i class="bi bi-plus-circle-fill"></i>
     </a>
-    
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="{% static 'js/script.js' %}"></script>
   </body>

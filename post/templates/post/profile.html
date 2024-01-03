@@ -73,21 +73,19 @@
                 <div class="f-cont">
                     {% if user not in request.user.follows.all %}
                     <button
-                        class="follow"
+                        class="follow followbtn"
                         value="follow"
                         data-id="{{ user.id }}"
-                        id="follow"
                     >
                         Follow
                     </button>
                     {% elif user in request.user.follows.all %}
                     <button
-                        class="follow"
+                        class="follow followbtn"
                         value="unfollow"
                         data-id="{{ user.id }}"
-                        id="unfollow"
                     >
-                        UnFollow
+                        Following 
                     </button>
                     {% endif %}
 

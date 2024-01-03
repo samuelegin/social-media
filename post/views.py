@@ -59,6 +59,12 @@ def addfollow(request:HttpRequest):
         following = get_object_or_404(User, id=u_id)
         current_user = request.user
 
+        # mutual followers logic
+        mutual_friends = []
+        for follower in following.followed_by.all():
+            if follower in current_user.followed_by.all():
+                mutual_friends.append(follower)
+
         if status == "follow":
             current_user.follows.add(following)
 
@@ -79,7 +85,7 @@ def addfollow(request:HttpRequest):
                 content=f"{current_user} just Unfollowed you")
 
             current_user.save()
-            return JsonResponse({"follow_num":    following.followed_by.count()})
+            return JsonResponse({"follow_num":following.followed_by.count()})
 
 
 @login_required

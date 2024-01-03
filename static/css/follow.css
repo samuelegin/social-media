@@ -1,10 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap");
-
 *{
-
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-style: kanit;
 }
 
 nav{
@@ -16,8 +15,7 @@ nav{
 }
 
 .search{
-    background-color: brown;
-    margin: 1rem 3rem;
+  margin: 1rem;
 }
 
 input[type=search]{
@@ -27,16 +25,16 @@ input[type=search]{
 }
 
 main{
-    gap: 1.5rem;
     margin-top: 1rem;
 }
 
 .user-card{
-    box-shadow: hsl(0, 0%, 90%) 0 0 4px;
+    box-shadow: hsl(0, 0%, 90%) 0 0 9px;
     padding: 1rem;
     display: flex;
     gap: 1.5rem;
     align-items: center;
+    margin: 0rem 1rem 1rem 1rem;
 }
 
 .user-profile{
@@ -52,14 +50,24 @@ main{
 }
 
 .username{
-    margin-bottom: 0.4rem;
     font-family: kanit;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+i.bi-patch-check-fill{
+  margin-bottom: 0.3rem;
+}
+i.bi-person-add{
+  font-size: 1rem;
 }
 
 .followers{
     margin-bottom: 0.5rem;
     font-weight: 530;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: kanit;
 }
 
 .follow{
@@ -67,9 +75,10 @@ main{
     color: white;
     border: none;
     padding: 0.5rem 1rem;
-    border-radius: 0.7rem;
+    border-radius: 0.4rem;
     font-family: kanit;
     cursor: pointer;
+    width: 5rem;
 }
 
 .follow:active{
