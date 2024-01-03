@@ -66,19 +66,21 @@ i.bi-person-add{
 
 .followers{
     margin-bottom: 0.5rem;
-    font-weight: 530;
+    font-weight: 700;
     font-family: kanit;
+    font-size: 0.7rem;
 }
 
 .follow{
-    background: purple;
-    color: white;
+    background: none;
+    color: purple;
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 0.4rem;
     font-family: kanit;
     cursor: pointer;
     width: 5rem;
+    border: 1px solid purple;
 }
 
 .follow:active{
