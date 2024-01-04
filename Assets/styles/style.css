@@ -52,7 +52,7 @@ i.bi-bell {
   border-radius: 50%;
 }
 .bi-plus-circle-fill {
-  fill: #6c14a0;
+  fill: purple;
 }
 .hidden {
   display: none;
@@ -250,9 +250,9 @@ main {
   border-radius: 0.7rem;
 }
 
-.complements i.bi-heart-fill{
+/*.complements .bi-heart-fill{
   color: grey;
-}
+}*/
 
 .complements i.bi-chat{
   color: grey;
