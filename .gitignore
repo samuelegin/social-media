@@ -1,3 +1,7 @@
 .env
 db.sqlite3
 __pycache__
+media
+post_image
+user_pic
+migrations
