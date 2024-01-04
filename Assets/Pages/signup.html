@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -13,49 +13,48 @@
   </head>
   <body>
     <div class="auth-container">
-      <div class="header">
-        <legend>Sign up</legend>
-        <p>Create your account</p>
+      <div class="login-side">
+        <div class="login-text">
+          <h2>welcome back</h2>
+          <h4>
+            Lorem ipsum dolor sit, amet Lorem ipsum dolor sit. consectetur
+            adipisicing elit.
+          </h4>
+            <button class="signin-btn">SIGN IN</button>
+        </div>
       </div>
 
-      <form action="" method="post">
-        <div class="form-input">
-          <label for="fullName">Full Name <span>*</span></label>
-          <input
-            type="text"
-            id="fullName"
-            name="fullName"
-            placeholder="Full name"
-          />
+      <div class="signup-side">
+        <div class="header">
+          <p>Create Account</p>
+          <h6>or use your email for registration</h6>
         </div>
-        <div class="form-input">
-          <label for="username">Username <span>*</span></label>
-          <input
-            type="text"
-            id="username"
-            name="username"
-            placeholder="Username"
-          />
-        </div>
-        <div class="form-input">
-          <label for="email">Email <span>*</span></label>
-          <input type="email" id="email" name="email" placeholder="Email" />
-        </div>
-        <div class="form-input">
-          <label for="password">Password <span>*</span></label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            placeholder="Password"
-          />
-          <i class="bi bi-eye-slash show-password"></i>
-        </div>
-        <button class="auth-btn">Sign up</button>
-      </form>
-
-      <div class="auth-footer">
-        Already have an account? <a href="../Pages/login.html">Login</a>
+        <form action="" method="post">
+          <div class="form-input">
+            <!-- <label for="fullName">Full Name <span>*</span></label> -->
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              placeholder="Name"
+            />
+          </div>
+          <div class="form-input">
+            <!-- <label for="email">Email <span>*</span></label> -->
+            <input type="email" id="email" name="email" placeholder="Email" />
+          </div>
+          <div class="form-input">
+            <!-- <label for="password">Password <span>*</span></label> -->
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Password"
+            />
+            <i class="bi bi-eye-slash show-password"></i>
+          </div>
+          <button class="auth-btn">Sign up</button>
+        </form>
       </div>
     </div>
   </body>
