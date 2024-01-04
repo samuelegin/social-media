@@ -9,7 +9,13 @@
   <body>
     <div class="container">
       <div class="comment-box">
-        <textarea name="" id="" cols="30" rows="10" placeholder="write a comment..."></textarea>
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="write a comment..."
+        ></textarea>
         <i></i>
       </div>
 
@@ -17,20 +23,17 @@
         <div class="comment">
           <div class="user-profile">
             <a href="">
-              <img
-                src="../Images/Rectangle 3 (1).png"
-                alt=""
-              />
+              <img src="../Images/Rectangle 3 (1).png" alt="" />
             </a>
           </div>
 
           <div class="user-comment">
-            <h4> <a href="">Josh Jay</a> </h4>
+            <h4><a href="">Josh Jay</a></h4>
             <h3>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Adipisci, dicta.
             </h3>
-            <br>
+            <br />
             <div class="comment-btns">
               <button>
                 <a href="">like</a>
@@ -38,9 +41,14 @@
               <button>
                 <a href="">reply</a>
               </button>
-              <button>
-                <a href="">view replies</a>
-              </button>
+              <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">veiw replies</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -49,20 +57,17 @@
         <div class="comment">
           <div class="user-profile">
             <a href="">
-              <img
-                src="../Images/Rectangle 3 (2).png"
-                alt=""
-              />
+              <img src="../Images/Rectangle 3 (2).png" alt="" />
             </a>
           </div>
 
           <div class="user-comment">
-            <h4> <a href="">Josh Jay</a> </h4>
+            <h4><a href="">Josh Jay</a></h4>
             <h3>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Adipisci, dicta.
             </h3>
-            <br>
+            <br />
             <div class="comment-btns">
               <button>
                 <a href="">like</a>
@@ -70,9 +75,14 @@
               <button>
                 <a href="">reply</a>
               </button>
-              <button>
-                <a href="">view replies</a>
-              </button>
+              <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">veiw replies</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -81,20 +91,17 @@
         <div class="comment">
           <div class="user-profile">
             <a href="">
-              <img
-                src="../Images/Rectangle 3 (3).png"
-                alt=""
-              />
+              <img src="../Images/Rectangle 3 (3).png" alt="" />
             </a>
           </div>
 
           <div class="user-comment">
-            <h4> <a href="">Josh Jay</a> </h4>
+            <h4><a href="">Josh Jay</a></h4>
             <h3>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Adipisci, dicta.
             </h3>
-            <br>
+            <br />
             <div class="comment-btns">
               <button>
                 <a href="">like</a>
@@ -102,15 +109,19 @@
               <button>
                 <a href="">reply</a>
               </button>
-              <button>
-                <a href="">view replies</a>
-              </button>
+              <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">veiw replies</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-
-
     </div>
+    <script src="../script/comment.js"></script>
   </body>
 </html>
