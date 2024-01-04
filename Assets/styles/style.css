@@ -108,7 +108,7 @@ main {
 .story-indicator {
   height: 3.5rem;
   width: 3.5rem;
-  border: 2px solid #6c14a0;
+  border: 2px solid purple;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -175,7 +175,7 @@ main {
 }
 
 .notification-number {
-  background-color: #6c14a0;
+  background-color: purple;
   height: 1.2em;
   width: 1.2em;
   border-radius: 50%;
@@ -294,7 +294,7 @@ main {
   right: 5%;
 }
 .open-file i {
-  color: #6c14a0;
+  color: purple;
   font-size: 30px;
 }
 .liked {
